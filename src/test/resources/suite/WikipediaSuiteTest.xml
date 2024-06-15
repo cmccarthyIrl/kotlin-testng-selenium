@@ -2,7 +2,7 @@
 <suite name="Test Suite">
     <test name="Login Test">
         <classes>
-            <class name="com.cmccarthy.kotlin.test.LoginTest"/>
+            <class name="com.cmccarthy.kotlin.test.WikipediaTest"/>
         </classes>
     </test>
     <!-- Include other tests as necessary -->

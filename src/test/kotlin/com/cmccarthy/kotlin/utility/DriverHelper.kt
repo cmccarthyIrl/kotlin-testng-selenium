@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory
 @Suppress("unused")
 open class DriverHelper {
 
-    private val logger: Logger = LoggerFactory.getLogger(DriverHelper::class.java)
+    protected val logger: Logger = LoggerFactory.getLogger(DriverHelper::class.java)
 
     /**
      * Send Keys to the specified element, clears the element first
@@ -22,7 +22,7 @@ open class DriverHelper {
     @Retryable(maxAttempts = 3, backoff = Backoff(delay = 500), include = [RetryException::class])
     fun sendKeys(element: WebElement, value: String?) {
         if (value != null) {
-            if (value.length > 0) {
+            if (value.isNotEmpty()) {
                 clear(element)
                 element.sendKeys(value)
             } else {
