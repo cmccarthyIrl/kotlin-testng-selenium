@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test Suite">
+    <test name="Login Test">
+        <classes>
+            <class name="com.cmccarthy.kotlin.test.LoginTest"/>
+        </classes>
+    </test>
+    <!-- Include other tests as necessary -->
+</suite>

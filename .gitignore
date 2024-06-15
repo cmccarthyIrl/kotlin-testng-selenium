@@ -1,0 +1,5 @@
+/.idea
+/target
+/test-output
+/src/test/resources/drivers/chromedriver.exe
+/src/test/resources/drivers/geckodriver.exe
